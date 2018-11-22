@@ -1,6 +1,7 @@
 
 void setup () {
   size(500, 600);
+  background (#8B6F6F);
   //Using WIDTH and HEIGHT Key Varaibles, communciaiton to the display Geometry
   //String[] fontList = PFont.list(); //To list all fonts available on system
   println("Start of Console");
