@@ -11,8 +11,8 @@ void setup () {
   quitButtonSetup();
 musicPlayerButtons();}
 
-
 void draw() {
+  
   quitButtonDraw();
 }
 
