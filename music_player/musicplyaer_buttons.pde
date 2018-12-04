@@ -4,6 +4,7 @@ boolean playButton = false;
 void musicPlayerButtons() {
   //slider
     ellipse(width*1/2,height*1/2,width*2/8,height*2/8);//inner
+    //Play-Pause
 ellipse (width*1/2,height*1/2,width*5/8,height*4/8);
 //ivonds
   rect(width*6/8,height*1/4,width*2/16,height*2/16,10);
@@ -12,7 +13,8 @@ ellipse (width*1/2,height*1/2,width*5/8,height*4/8);
   ellipse(width*1/32,height*1/32,width*1/32,height*0.8/32);
     ellipse(width*1/32,height*2/32,width*1/32,height*0.8/32);
     ellipse(width*1/32,height*3/32,width*1/32,height*0.8/32);
-  //Play-Pause
+  //next song & previous song
+ //triangle (width*12/16, height*27.5/32, width*12/16, height*30.5/32, width*14/16, height*29/32);
 
 //rect (width*1/2,height*1/2,width*1/8,height*1/8);
      
