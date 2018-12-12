@@ -1,9 +1,51 @@
-// Uses rect() & fill(), both value and default
-// Use this TAB as an example to copy and paste where-ever you need text
+import ddf.minim.*;
+import ddf.minim.analysis.*;
+import ddf.minim.effects.*;
+import ddf.minim.signals.*;
+import ddf.minim.spi.*;
+import ddf.minim.ugens.*;
 
-void text() {
-  textAlign (CENTER, CENTER); //Align X&Y, see Processing.org / Reference
-  //Values: [LEFT | CENTER | RIGHT] & [TOP | CENTER | BOTTOM | BASELINE]
-  textFont(titleFont, 50); //Change the number until it fits, largest font size
-  text(title, width*1/4, height*0, width*1/2, height*1/10);
+//Global Variables
+Minim minim;
+AudioPlayer song1;
+
+void setup() {
+  //size(): Console output, not visual data, text promptos only, not complete yet
+
+  minim = new Minim(this); //load from data directory, loadFile should also load from project folder
+  song1 = minim.loadFile("Judgement.mp3");
+
+  println("Start of Console");
+  println("Click the Console to Finish Starting this program");
+  println("Press P to Play and Pause");
+}
+
+void draw() {
+}
+
+void mousePressed() {
+}
+void keyPressed() {
+ if (currentSong == numberofSongs) 
+  }
+    if (key == 'n' || key == 'N') {
+  if song[currentSong].isPlaying(){
+    song [currentSong].pause{};
+    song [currentSong].rewind();
+    currentSong = currentSong + 1;
+    song [currentSong].play();
+  }else{
+    song [currentSong].rewind();
+    currentSong = currentSong + 1;
+}
+  if (key == 'p' || key == 'P') {
+    if ( song1.isPlaying() ) {
+      song1.pause();
+    } else if ( song1.position() == song1.length() ) {
+      song1.rewind();
+      song1.play();
+    } else {
+      song1.play();
+    }
+  }
 }
