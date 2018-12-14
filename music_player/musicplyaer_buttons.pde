@@ -30,16 +30,25 @@ ellipse (width*1/2,height*1/2,width*5/8,height*4/8);
 
   
 //play and pause
-//rect (width*1/2,height*1/2,width*0.5/4,height*0.5/4);
-  if (mouseX>width*4/16 && mouseX<width && mouseY>0 && mouseY<height*4/16) { 
-     fill(#2EAEAE);
-     ellipse(width*1/2,height*1/2,width*2.5/8,height*2/8);
+
+  }
+
+void playbuttonDraw(){
+  
+ 
+
+rect (width*3/8,height*1/2,width*4/16,height*2/16);
+ //println("Mousex:", mouseX, "\tMouseY:", mouseY);
+  if (mouseX>width*3/8 && mouseX<width*4/16 && mouseY>height*1/2 && mouseY<height*2/16) { 
+    fill(#77A1D6);
+    ellipse(width*1/2,height*1/2,width*2.5/8,height*2/8);
+    //playButton = true;
+    //playButton = false;
   } else {
      fill (#BD2850);
      ellipse(width*1/2,height*1/2,width*2.5/8,height*2/8);
-  }
-  }
-
-
+  
+  } 
+}
   
  

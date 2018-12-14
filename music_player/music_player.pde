@@ -12,7 +12,7 @@ void setup () {
 musicPlayerButtons();}
 
 void draw() {
-  
+  playbuttonDraw();
   quitButtonDraw();
 }
 
