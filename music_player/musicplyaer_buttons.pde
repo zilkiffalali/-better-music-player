@@ -23,32 +23,39 @@ ellipse (width*1/2,height*1/2,width*5/8,height*4/8);
   //wavelength(volume reader);
   rect(width*3/8,height*13/16,width*4/16,height*2/16,10); 
   //Next
+  
   //Previous
   //Volume slider (interactive circle)
-
+}
 
 
   
 //play and pause
 
-  }
+  
 
 void playbuttonDraw(){
-  
- 
+  fill(#BC3D90);
+    ellipse(width*1/2,height*1/2,width*2.5/8,height*2/8);
+   if (mouseX>width*3/8 && mouseX<width*4/16 && mouseY>height*1/2 && mouseY<height*2/16){  
+   fill(#779ECB);
+   ellipse(width*1/2,height*1/2,width*2.5/8,height*2/8);
+}
+}
 
-rect (width*3/8,height*1/2,width*4/16,height*2/16);
- //println("Mousex:", mouseX, "\tMouseY:", mouseY);
-  if (mouseX>width*3/8 && mouseX<width*4/16 && mouseY>height*1/2 && mouseY<height*2/16) { 
-    fill(#77A1D6);
+//rect (width*3/8,height*1/2,width*4/16,height*2/16);
+
+ /*
+ void mousePressed(){
+  if (mouseX>width*3/8 && mouseX<width*4/16 && mouseY>height*1/2 && mouseY<height*2/16){  
+    fill(#000000);
     ellipse(width*1/2,height*1/2,width*2.5/8,height*2/8);
     //playButton = true;
     //playButton = false;
-  } else {
-     fill (#BD2850);
-     ellipse(width*1/2,height*1/2,width*2.5/8,height*2/8);
-  
-  } 
-}
-  
+ }else {
+    fill(#779ECB);
+      ellipse(width*1/2,height*1/2,width*2.5/8,height*2/8);
+ }
  
+ }
+ */
