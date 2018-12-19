@@ -11,25 +11,25 @@ int numberOfSongs = 3;
 AudioPlayer[] song = new AudioPlayer[numberOfSongs];
 int currentSong = numberOfSongs - numberOfSongs; //Uses formula or FileIO Memory
 
-void setup() {
+void musicsetup() {
   //size(): Console output, not visual data, text promptos only, not complete yet
 
   minim = new Minim(this); //load from data directory, loadFile should also load from project folder
-  song[0] = minim.loadFile("groove.mp3");
-  song[1] = minim.loadFile("Beat_Your_Competition.mp3");
-  song[2] = minim.loadFile("The_Simplest.mp3");
+  song[0] = minim.loadFile("Judgement - Devilman Crybaby OST.mp3");
+  song[1] = minim.loadFile("Castlevania - Bloody Tears Acapella.mp3");
+  song[2] = minim.loadFile("battleGround.mp3");
 
   println("Start of Console");
   println("Click the Console to Finish Starting this program");
   println("Press P to Play and Pause");
+}
 
 
 
-
-//void mousePressed() {
+//void musicmousePressed() {
 //}
 
-void keyPressed() {
+void MUSICkeyPressed() {
   println ("Current Song before the next or back button, ", "Number: "+currentSong); //For Debugging
   if (key == 'n' || key == 'N') { //Next Button to Console
     if (song[currentSong].isPlaying()) {
