@@ -7,19 +7,19 @@ void setup () {
   println("Start of Console");
   //printArray(fontList); //For listing all possible fonts to choose, then createFont
   titleFont = createFont ("Vivaldii-48", 55); //Must also Tools / Create Font / Find Font / Do Not Press "OK"
-musicsetup();
+//musicsetup();
   quitButtonSetup();
 musicPlayerButtons();}
 
 void draw() {
-  playbuttonDraw();
-  quitButtonDraw();
+ // playbuttonDraw();
+quitButtonDraw();
 }
 
 void mouseClicked() { 
-  quitButtonMouseClicked();
+ // quitButtonMouseClicked();
 musicPlayerButtons();
 }
 void keyPressed(){
- MUSICkeyPressed(); 
+// MUSICkeyPressed();
 }
