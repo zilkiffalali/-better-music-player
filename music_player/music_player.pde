@@ -6,14 +6,17 @@ void setup () {
   //String[] fontList = PFont.list(); //To list all fonts available on system
   println("Start of Console");
   //printArray(fontList); //For listing all possible fonts to choose, then createFont
-  titleFont = createFont ("Vivaldii-48", 55); //Must also Tools / Create Font / Find Font / Do Not Press "OK"
+  //titleFont = createFont ("Vivaldii-48", 55); //Must also Tools / Create Font / Find Font / Do Not Press "OK"
 //musicsetup();
-  quitButtonSetup();
-musicPlayerButtons();}
+  //quitButtonSetup();
+musicPlayerButtons();
+musicplayersetup();
+}
 
 void draw() {
  // playbuttonDraw();
-quitButtonDraw();
+//quitButtonDraw();
+musicdraw();
 }
 
 void mouseClicked() { 
@@ -22,4 +25,5 @@ musicPlayerButtons();
 }
 void keyPressed(){
 // MUSICkeyPressed();
+musicmousepressed();
 }

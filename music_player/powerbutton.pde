@@ -1,4 +1,4 @@
-
+/*
 color purple = #FF03F3;
 color yellow = #FFF703;
 color regularButton = purple;
@@ -36,3 +36,4 @@ void quitButtonMouseClicked() {
     exit();
   }
 }
+*/

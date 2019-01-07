@@ -1,13 +1,15 @@
 
-//boolean playButton = false;
+//boolean playButton = FALSE;
 
 void musicPlayerButtons() {
   //playbutton
   ellipse (width*1/2, height*1/2, width*5/8, height*4/8);
   ellipse(width*1/2, height*1/2, width*2.5/8, height*2/8);
   //additional buttons
+    fill (#D6A623);
   ellipse(width*1/8, height*11/16, width*4/16, height*3/16);
   ellipse(width*7/8, height*11/16, width*4/16, height*3/16);
+  fill (#F7F7F7);
   //music icon
   rect(width*3/8, height*1/16, width*4/16, height*2/16, 50);
   //menu
@@ -26,5 +28,5 @@ void musicPlayerButtons() {
   //Next
 }
 void playbuttonDraw() {
- if (mouseX>width*3/8 && mouseX<width && mouseY>0 && 
+// if (mouseX>width*3/8 && mouseX<width*&& mouseY>0 && )
 }
