@@ -10,7 +10,7 @@ void setup () {
 //musicsetup();
   //quitButtonSetup();
 musicPlayerButtons();
-musicplayersetup();
+musicsetup();
 }
 
 void draw() {
@@ -25,5 +25,5 @@ musicPlayerButtons();
 }
 void keyPressed(){
 // MUSICkeyPressed();
-musicmousepressed();
+//musicmousepressed();
 }
