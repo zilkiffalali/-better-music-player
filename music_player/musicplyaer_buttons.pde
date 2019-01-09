@@ -1,7 +1,7 @@
 
 //boolean playButton = FALSE;
 
-void musicPlayerButtons() {
+void MusicPlayerButtons() {
   //playbutton
   ellipse (width*1/2, height*1/2, width*5/8, height*4/8);
   ellipse(width*1/2, height*1/2, width*2.5/8, height*2/8);

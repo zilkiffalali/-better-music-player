@@ -10,21 +10,23 @@ void setup () {
   //titleFont = createFont ("Vivaldii-48", 55); //Must also Tools / Create Font / Find Font / Do Not Press "OK"
 //musicsetup();
   //quitButtonSetup();
-musicPlayerButtons();
-musicsetup();
+MusicPlayerButtons();
+MusicSetup();
 }
 
 void draw() {
  // playbuttonDraw();
 //quitButtonDraw();
 MusicDraw();
+
 }
 
 void mouseClicked() { 
  // quitButtonMouseClicked();
 MusicPlayerButtons();
+MusicMousePressed();
 }
 void keyPressed(){
 // MUSICkeyPressed();
-MusicMousePressed();
+
 }

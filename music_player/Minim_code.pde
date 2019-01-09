@@ -13,10 +13,10 @@ boolean playbutton = false;
 
 void MusicSetup() {
   minim = new Minim (this);
-  song[0] = minim.loadFile("Judgement - Devilman Crybaby OST.mp3");
+  song[0] =  minim.loadFile("Judgement - Devilman Crybaby OST.mp3");
   song [1] = minim.loadFile("Castlevania - Bloody Tears Acapella.mp3");
   song [2] = minim.loadFile("DARK SOULS II - Sir Alonne (Piano Violin Version) (mp3cut.net).mp3");
-  song[2].play();
+  
 }
 void MusicDraw() {
 
@@ -29,15 +29,13 @@ void MusicDraw() {
   rect (width*3/8, height*3.25/8, width*2/8, height*1.75/8);
 }
 void MusicMousePressed() {
-
-  if (mouseX>width*3/8 && mouseX<width*5/8 && mouseY>height*3.25 && mouseY<height*5/8 ) {
+println ("Mousex:", mouseX, "\tMouseY:", mouseY);
+  if (mouseX>width*3/8 && mouseX<width*5/8 && mouseY>height*3.25/8 && mouseY<height*5/8 ) {
     if (song[currentSong].isPlaying()) {
       song[currentSong].pause();
       song[currentSong].rewind();
-      { else {}
-
-      if (song[currentSong].isPlaying() ) {
-      }
+    } else {
+      song[currentSong].play();
     }
   }
 }
