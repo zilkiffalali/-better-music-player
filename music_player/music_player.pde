@@ -1,4 +1,5 @@
 
+
 void setup () {
   size(500, 600);
   background (#8B6F6F);
@@ -16,14 +17,14 @@ musicsetup();
 void draw() {
  // playbuttonDraw();
 //quitButtonDraw();
-musicdraw();
+MusicDraw();
 }
 
 void mouseClicked() { 
  // quitButtonMouseClicked();
-musicPlayerButtons();
+MusicPlayerButtons();
 }
 void keyPressed(){
 // MUSICkeyPressed();
-//musicmousepressed();
+MusicMousePressed();
 }
