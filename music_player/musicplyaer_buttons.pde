@@ -11,6 +11,9 @@ void MusicPlayerButtons() {
   ellipse(width*7/8, height*11/16, width*4/16, height*3/16);
   fill (#F7F7F7);
   //music icon
+  stroke(3);
+  line(width*4/8,height*1/16,width*3/8,height*3/16);
+  stroke(1);
   rect(width*3/8, height*1/16, width*4/16, height*2/16, 50);
   //menu
   ellipse(width*1/32, height*1/32, width*1/32, height*0.8/32);
