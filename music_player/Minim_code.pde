@@ -11,11 +11,14 @@ AudioPlayer[] song = new AudioPlayer[3];
 int currentSong = numberofSongs - numberofSongs;
 boolean playbutton = false;
 boolean nextsong = false;
+
 //sound effects
 AudioSample pause;
 AudioSample menu;
 AudioSample play ;
-
+//images
+PImage shuffle;
+PImage loop;
 void MusicSetup() {
 
   minim = new Minim (this);
@@ -23,12 +26,11 @@ void MusicSetup() {
   song [1] = minim.loadFile("Castlevania - Bloody Tears Acapella.mp3");
   song [2] = minim.loadFile("DARK SOULS II - Sir Alonne (Piano Violin Version) (mp3cut.net).mp3");
   pause = minim.loadSample("pause-sound.mp3");
-  menu = minim.loadSample("Men-effect (mp3cut.net).mp3");
+  menu = minim.loadSample("pause-sound.mp3");
   play = minim.loadSample("start.mp3");
-  if (song[currentSong].isPlaying()) {
-    song[currentSong].loop();
-  } else {
-  }
+  
+  shuffle = loadImage("download.png"); //width 225pixels, height 225pixels
+  //loop = loadImage ("");
 }
 void MusicDraw() {
 
@@ -40,17 +42,20 @@ void MusicDraw() {
   ellipse(width*7/8, height*11/16, song[2].left.get(currentSong)*100, 110);
   rect (width*0.5/32, height*0.5/32, width*1/32, height*3/32);
   //rect (width*10.25/16, height*13/16, width*3/16, height*1.95/16);//next song button
+   rect(width*5.75/16, height*13/16, width*2/16, height*2/16 ); 
+   image (shuffle,width*5.75/16, height*13/16, width*2/16, height*2/16);
+    rect(width*8/16, height*13/16, width*2/16, height*2/16, 10); 
 }
 
 void MusicMousePressed() {
-  println ("Mousex:", mouseX, "\tMouseY:", mouseY);
-  if (mouseX>width*3/8 && mouseX<width*5/8 && mouseY>height*3.25/8 && mouseY<height*5/8 ) {
-   menu.trigger();
+
+  if (mouseX>5.75/16 && mouseX<7.75/16 && mouseY>height*13/16 && mouseY<height*15/16){
     if (song[currentSong].isPlaying()) {
       song[currentSong].pause();
       fill(#87B99B);
       ellipse(width*1/2, height*1/2, width*2.5/8, height*2/8);
       fill(#F7F7F7);
+        menu.trigger();
      } else if ( song[currentSong].position() == song[currentSong].length() ) {
       song[currentSong].rewind();
       song[currentSong].play();
@@ -60,12 +65,9 @@ void MusicMousePressed() {
       ellipse(width*1/2, height*1/2, width*2.5/8, height*2/8);
       fill(#F7F7F7);
     }
-  }
+  
   //menu
-  if (mouseX>width*0.5/32 && mouseX<width*1.5/32 && mouseY>height*0.5/32 && mouseY<height*3.5/32) {
-    menu.trigger();
-    if ( menu == null ) println("Didn't get menu!");
-  }
+ 
 
   //previous song
   if (mouseX>width*2.25/16 && mouseX<width*5.25/16 && mouseY>height*13/16 && mouseY<height*14.95/16) {
@@ -93,4 +95,5 @@ void MusicMousePressed() {
       println ("Current Song after the next or back button, but not the last song", "\tNumber: "+currentSong); //For Debugging
     }
   }
+}
 }

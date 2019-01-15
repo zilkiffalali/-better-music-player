@@ -15,10 +15,6 @@ void MusicPlayerButtons() {
   line(width*4/8,height*1/16,width*3/8,height*3/16);
   stroke(1);
   rect(width*3/8, height*1/16, width*4/16, height*2/16, 50);
-  //menu
-  ellipse(width*1/32, height*1/32, width*1/32, height*0.8/32);
-  ellipse(width*1/32, height*2/32, width*1/32, height*0.8/32);
-  ellipse(width*1/32, height*3/32, width*1/32, height*0.8/32);
   //next song & previous song
   triangle (width*11/16, height*13/16, width*11/16, height*15/16, width*14/16, height*14/16);
   strokeWeight(5);
@@ -27,7 +23,7 @@ void MusicPlayerButtons() {
   strokeWeight(1);
   triangle(width*5/16, height*13/16, width*5/16, height*15/16, width*2/16, height*14/16);
   //wavelength(volume reader);
-  rect(width*3/8, height*13/16, width*4/16, height*2/16, 10); 
+ // rect(width*6/16, height*13/16, width*4/16, height*2/16, 10); 
   //Next
 }
 void playbuttonDraw() {
