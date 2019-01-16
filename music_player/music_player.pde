@@ -1,22 +1,21 @@
-
-
+String title = "Zilki's music player";
+PFont titleFont;
 void setup () {
   size(500, 600);
   background (#8B6F6F);
   println("Start of Console");
-
-MusicPlayerButtons();
-MusicSetup();
+  titleFont = createFont ("",25);
+  MusicPlayerButtons();
+  MusicPlayerSetup();
 }
 
 void draw() {
 
-MusicDraw();
-
+  MusicDraw();
 }
 
 void mouseClicked() { 
 
-MusicPlayerButtons();
-MusicMousePressed();
+  //MusicPlayerButtons();
+  MusicMousePressed();
 }
