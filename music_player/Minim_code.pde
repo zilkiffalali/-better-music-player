@@ -46,7 +46,8 @@ void MusicDraw() {
   rect(width*8/16, height*13/16, width*2/16, height*2/16, 10); 
   image(loop, width*8.25/16, height*13.2/16, width*1.5/16, height*1.5/16);
   //rect(width*2.75/8, height*3/8, width*2.5/8, height*1.9/8);//play pause coordinate
-  // rect(width*2.25/16, height*13/16, (width*5.25/16)-(width*2.25/16), (height*14.95/16)-(height*13/16) ); play pause button
+  // rect(width*2.25/16, height*13/16, (width*5.25/16)-(width*2.25/16), (height*14.95/16)-(height*13/16) ); play pause buttonqsdada
+//sdasdbgg3rger
 }
 void MusicMousePressed() {
   //rect(width*1/4, height*3/8, width*5/8, height*4/8);
